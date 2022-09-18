@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+
+        p{
+            background-color: #9d9ee0;
+            font-family: italic;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 18px 6px;
+            padding: 15px ;
+
+        }
+        button{
+            background-color: rgba(85, 54, 224, 0.315);
+            margin: 8px;
+            padding: 8px;
+        }
+    </style>
+    <script>
+        function myfunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed...";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>javascript demo</h1>
+
+    <p id="demo"> A Paragraph...</p>
+    <button type="button" onclick="myfunction()">Try it!</button>
+</body>
+
+</html>

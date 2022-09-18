@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1>This is the Heading</h1>
+    <div id="para" class="container">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsum aliquam ut rerum ullam, aspernatur reprehenderit eius beatae velit dolores maxime exercitationem natus nihil unde ea fuga, tenetur quia deserunt, voluptate corporis facere. Esse, ea saepe voluptates eligendi quam consectetur aut, delectus vero ullam iste quis atque perspiciatis fugiat necessitatibus molestias dicta, corrupti tempore dolor totam odit dolores! Dicta delectus inventore, assumenda molestiae, amet vero repudiandae facilis facere dolorum nemo repellendus esse nihil earum. Veniam nisi ex velit voluptate neque repudiandae provident rem enim? Sit, ipsam eaque. Omnis soluta illum quaerat odio repellendus temporibus quos, deleniti, asperiores et optio debitis.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

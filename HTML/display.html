@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 2px;
+            animation: load 1s ease-in-out 1;
+        }
+
+        * {
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            padding: 0px 16px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        
+        }
+        .navbar ul li{
+            padding: 0px 35px;
+            display: inline-block;
+            margin: 20px 14px;
+            font-size: 20px;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .right {
+            
+            background-color: rgb(107, 235, 78);
+            color: black;
+            display: inline-block;
+            width: 50%;
+            height: 880vh;
+
+        }
+        .left {
+            background-color: aqua;
+            color:black;
+            display: inline-block;
+            width: 50%;
+            height: 880vh;      
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 15px;
+
+        }
+        .center{
+            font-family: cursive;
+            text-align: center;
+        }
+        @keyframes load{
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 75vw;
+            }
+            100%{
+                width: 100vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="right">Lorem, ipsum dolor.</div><div class="left">Lorem ipsum dolor sit.</div>
+    <hr>
+    <footer><p class="center">Copyright &copy Display - All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
